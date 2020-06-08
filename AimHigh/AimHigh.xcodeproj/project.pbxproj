@@ -7,19 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		60986228248E117F00E2561C /* OpeningGoalsPageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60986227248E117F00E2561C /* OpeningGoalsPageTableViewController.swift */; };
+		6098622B248E124600E2561C /* GoalsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6098622A248E124600E2561C /* GoalsTableViewCell.swift */; };
 		609FAB762485568100C2B197 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609FAB752485568100C2B197 /* AppDelegate.swift */; };
 		609FAB782485568100C2B197 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609FAB772485568100C2B197 /* SceneDelegate.swift */; };
-		609FAB7A2485568100C2B197 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609FAB792485568100C2B197 /* ViewController.swift */; };
 		609FAB7D2485568100C2B197 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 609FAB7B2485568100C2B197 /* Main.storyboard */; };
 		609FAB7F2485568400C2B197 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 609FAB7E2485568400C2B197 /* Assets.xcassets */; };
 		609FAB822485568400C2B197 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 609FAB802485568400C2B197 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		60986227248E117F00E2561C /* OpeningGoalsPageTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpeningGoalsPageTableViewController.swift; sourceTree = "<group>"; };
+		6098622A248E124600E2561C /* GoalsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsTableViewCell.swift; sourceTree = "<group>"; };
 		609FAB722485568100C2B197 /* AimHigh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AimHigh.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		609FAB752485568100C2B197 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		609FAB772485568100C2B197 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		609FAB792485568100C2B197 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		609FAB7C2485568100C2B197 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		609FAB7E2485568400C2B197 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		609FAB812485568400C2B197 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -37,6 +39,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		60986229248E119B00E2561C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				60986227248E117F00E2561C /* OpeningGoalsPageTableViewController.swift */,
+				6098622A248E124600E2561C /* GoalsTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		609FAB692485568100C2B197 = {
 			isa = PBXGroup;
 			children = (
@@ -57,8 +68,8 @@
 			isa = PBXGroup;
 			children = (
 				609FAB752485568100C2B197 /* AppDelegate.swift */,
+				60986229248E119B00E2561C /* Views */,
 				609FAB772485568100C2B197 /* SceneDelegate.swift */,
-				609FAB792485568100C2B197 /* ViewController.swift */,
 				609FAB7B2485568100C2B197 /* Main.storyboard */,
 				609FAB7E2485568400C2B197 /* Assets.xcassets */,
 				609FAB802485568400C2B197 /* LaunchScreen.storyboard */,
@@ -138,8 +149,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				609FAB7A2485568100C2B197 /* ViewController.swift in Sources */,
+				6098622B248E124600E2561C /* GoalsTableViewCell.swift in Sources */,
 				609FAB762485568100C2B197 /* AppDelegate.swift in Sources */,
+				60986228248E117F00E2561C /* OpeningGoalsPageTableViewController.swift in Sources */,
 				609FAB782485568100C2B197 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
