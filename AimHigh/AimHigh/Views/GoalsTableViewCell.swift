@@ -9,6 +9,11 @@
 import UIKit
 
 class GoalsTableViewCell: UITableViewCell {
+    
+    @IBOutlet weak var imageTableViewCell: UIImageView!
+    @IBOutlet weak var overviewGoalCell: UITextField!
+    @IBOutlet weak var percentageLable: UILabel!
+    
 
     override func awakeFromNib() {
         super.awakeFromNib()
