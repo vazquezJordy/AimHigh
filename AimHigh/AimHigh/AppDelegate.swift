@@ -8,6 +8,11 @@
 
 import UIKit
 import Firebase
+import FirebaseFirestore
+import FirebaseCore
+
+var goalDateFormatter = DateFormatter()
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,8 +21,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        FirebaseApp.configure()
+        goalDateFormatter.dateStyle = .full
         
+        FirebaseApp.configure()
+        let db = Firestore.firestore()
+//        the print is just to silence
+        print(db)
         return true
     }
 

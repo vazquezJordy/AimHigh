@@ -7,32 +7,28 @@
 //
 
 import Foundation
+import UIKit
 
-class GoalStructure {
-    
-    struct GoalOverView: Codable {
-        let image: String
-        let goalsDetails: [ GoalInput]
-        let percentageOfCompletion: Int
-        
-        
-    }
-    
-    struct GoalInput: Codable {
-        let nameOfGoal: String
-        let purposeOfGoal: String
-        let reasonForGoal: String
-        let date: Date?
-    }
-    
-    struct TouchGoalDetails: Codable {
-        let reasonOfGoalsDetail: [GoalInput]
-        let smallSteps: String
-        let InputOfStepGoal: [InputForStepGoals]
-    }
-    
-    struct InputForStepGoals:Codable {
-        let nameOfStepGoal: String
-        let date: Date?
+struct GoalStructure {
+    let nameOfGoal: String?
+    let imageGoal: UIImage
+    let reasonsForGoal: [String]
+    let smallSteps: [String]
+    let date: Date?
+}
+
+// This is so that i cange change the color of the placeHolder Text
+extension UITextField{
+   @IBInspectable var placeHolderColor: UIColor? {
+        get {
+            return self.placeHolderColor
+        }
+        set {
+            self.attributedPlaceholder = NSAttributedString(string:self.placeholder != nil ? self.placeholder! : "", attributes:[NSAttributedString.Key.foregroundColor: newValue!])
+        }
     }
 }
+
+
+
+
