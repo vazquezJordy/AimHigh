@@ -24,7 +24,9 @@ class GoalBreakDownTableViewCell: UITableViewCell {
     }
 
     func configureCell(smallGoalStructure: SmallGoalStructure){
-        smallGoalName.text = smallGoalBreakDown.smallNameOfGoal
+        smallGoalName.text = smallGoalStructure.smallNameOfGoal
+        dateOfSmallGoal.text = smallGoalStructure.smallDate.date
+        smallGoalBreakDown = smallGoalStructure
     }
     
 }

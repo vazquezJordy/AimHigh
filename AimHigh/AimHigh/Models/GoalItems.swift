@@ -17,11 +17,21 @@ struct GoalStructure {
     var documentID: String
 }
 
-struct SmallGoalStructure {
+struct SmallGoalStructure: Equatable {
     let smallNameOfGoal: String?
     let smallDate: Date?
     let goalNotes: String?
     var document: String
+    
+    static func == (lhs: SmallGoalStructure, rhs: SmallGoalStructure) -> Bool {
+        return lhs.smallNameOfGoal == rhs.smallNameOfGoal && lhs.goalNotes == rhs.goalNotes
+    }
+}
+
+struct Constants {
+    struct Storyboard {
+     static let homeViewController = "HomeVc"
+    }
 }
 
 // This is so that i cange change the color of the placeHolder Text

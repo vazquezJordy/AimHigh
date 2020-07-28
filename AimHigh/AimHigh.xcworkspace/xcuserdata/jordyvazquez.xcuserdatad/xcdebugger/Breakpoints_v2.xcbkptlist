@@ -39,38 +39,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "E97CE847-0A9F-44D7-9E5E-0E1741A6169D"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "AimHigh/Views/GoalBreakDownTableViewCell.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
-            landmarkName = "configureCell(smallGoalStructure:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "23A1E155-C6B5-4023-858F-3E545BE4F312"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "AimHigh/Views/GoalBreakDownTableViewCell.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "26"
-            endingLineNumber = "26"
-            landmarkName = "configureCell(smallGoalStructure:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "3347D7DD-56ED-4A9C-BAFB-CA5351B7D109"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
@@ -98,98 +66,6 @@
             endingLineNumber = "15"
             landmarkName = "DetailOfGoalsViewController"
             landmarkType = "3">
-            <Locations>
-               <Location
-                  uuid = "0ABFB66A-2A97-4EF6-BDAC-95746EECBB57 - 2bece6dd87d71cde"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "AimHigh.DetailOfGoalsViewController.tableViewForSmallGoals.getter : Swift.Optional&lt;__C.UITableView&gt;"
-                  moduleName = "AimHigh"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jordyvazquez/Desktop/Aimhigh/AimHigh/AimHigh/Views/DetailOfGoalsViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "15"
-                  endingLineNumber = "15"
-                  offsetFromSymbolStart = "88">
-               </Location>
-               <Location
-                  uuid = "0ABFB66A-2A97-4EF6-BDAC-95746EECBB57 - b1b1461c94cf7f6a"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "AimHigh.DetailOfGoalsViewController.tableViewForSmallGoals.setter : Swift.Optional&lt;__C.UITableView&gt;"
-                  moduleName = "AimHigh"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jordyvazquez/Desktop/Aimhigh/AimHigh/AimHigh/Views/DetailOfGoalsViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "15"
-                  endingLineNumber = "15"
-                  offsetFromSymbolStart = "104">
-               </Location>
-               <Location
-                  uuid = "0ABFB66A-2A97-4EF6-BDAC-95746EECBB57 - 5c04aac232a573f3"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "AimHigh.DetailOfGoalsViewController.tableViewForSmallGoals.modify : Swift.Optional&lt;__C.UITableView&gt;"
-                  moduleName = "AimHigh"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jordyvazquez/Desktop/Aimhigh/AimHigh/AimHigh/Views/DetailOfGoalsViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "67">
-               </Location>
-               <Location
-                  uuid = "0ABFB66A-2A97-4EF6-BDAC-95746EECBB57 - 9fed741189bd8640"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "AimHigh.DetailOfGoalsViewController.tableViewForSmallGoals.modify : Swift.Optional&lt;__C.UITableView&gt; with unmangled suffix &quot;.resume.0&quot;"
-                  moduleName = "AimHigh"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jordyvazquez/Desktop/Aimhigh/AimHigh/AimHigh/Views/DetailOfGoalsViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "15"
-                  endingLineNumber = "15"
-                  offsetFromSymbolStart = "76">
-               </Location>
-               <Location
-                  uuid = "0ABFB66A-2A97-4EF6-BDAC-95746EECBB57 - c6fd01c1216ce2e0"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "AimHigh.DetailOfGoalsViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; AimHigh.DetailOfGoalsViewController"
-                  moduleName = "AimHigh"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jordyvazquez/Desktop/Aimhigh/AimHigh/AimHigh/Views/DetailOfGoalsViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "15"
-                  endingLineNumber = "15"
-                  offsetFromSymbolStart = "196">
-               </Location>
-               <Location
-                  uuid = "0ABFB66A-2A97-4EF6-BDAC-95746EECBB57 - 6e797ef6ac24a203"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "AimHigh.DetailOfGoalsViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;AimHigh.DetailOfGoalsViewController&gt;"
-                  moduleName = "AimHigh"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jordyvazquez/Desktop/Aimhigh/AimHigh/AimHigh/Views/DetailOfGoalsViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "15"
-                  endingLineNumber = "15"
-                  offsetFromSymbolStart = "152">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -301,6 +177,49 @@
             startingLineNumber = "48"
             endingLineNumber = "48"
             landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.ExceptionBreakpoint">
+         <BreakpointContent
+            uuid = "86F8D13F-96C6-4FE8-AE29-36C57D287042"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            scope = "0"
+            stopOnStyle = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4792C2CE-801B-4138-A00E-21B2B37ACB48"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AimHigh/Controllers/SignUpViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "76"
+            endingLineNumber = "76"
+            landmarkName = "signUpTapped(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BC08EBD4-8605-4CC0-B646-85B57F719427"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AimHigh/Controllers/NewGoalInputViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "135"
+            endingLineNumber = "135"
+            landmarkName = "saveButtonTapped(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

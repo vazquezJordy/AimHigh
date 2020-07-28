@@ -22,6 +22,7 @@ class GoalsTableViewCell: UITableViewCell {
 
     func configureCell(goalStructure: GoalStructure) {
         overviewGoalCell.text = goalStructure.nameOfGoal
+        
         imageTableViewCell.image = goalStructure.imageGoal
     }
     

@@ -12,5 +12,6 @@ target 'AimHigh' do
   pod 'Firebase/Storage' 
   pod 'Firebase/Firestore'
   pod 'FirebaseFirestoreSwift'
+  pod 'FirebaseUI/Auth'
 
 end
