@@ -125,6 +125,7 @@ class NewGoalInputViewController: UIViewController, UINavigationControllerDelega
         goalDateFormatter.dateStyle = .full
         
         var ref: DocumentReference? = nil
+        
         guard let imageString = self.goalImageView.image?.jpegData(compressionQuality: 0.1)?.base64EncodedString() else {
             return
         }
@@ -148,8 +149,9 @@ class NewGoalInputViewController: UIViewController, UINavigationControllerDelega
         
         performSegue(withIdentifier: "unwindToMainTableView", sender: self)
     }
-    
 }
+
+
 
 
 

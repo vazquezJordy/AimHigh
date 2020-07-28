@@ -19,48 +19,34 @@ class OpeningGoalsPageTableViewController: UITableViewController {
     var goalStructure: [GoalStructure] = []
     var db: Firestore! = Firestore.firestore()
     private var goalsCollectionRef: CollectionReference!
-    
-    
     let storageRef = Storage.storage().reference()
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        navigationController?.navigationBar.barTintColor = #colorLiteral(red: 0.7346218228, green: 0.5962660313, blue: 0.4919709563, alpha: 1)
+        navigationController?.navigationBar.tintColor = #colorLiteral(red: 0.9881132245, green: 0.988348186, blue: 0.9838065505, alpha: 1)
+        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
         db = Firestore.firestore()
-        goalsCollectionRef = Firestore.firestore().collection("goals")
+        goalsCollectionRef = Firestore.firestore().collection("goal")
         
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        //        goalsCollectionRef.getDocuments { (snapshot, error) in
-        //            if let err = error {
-        //                debugPrint("error fetching docs \(err)")
-        //            } else {
-        //                let ramdomID = UUID.init().uuidString
-        //                guard let snap = snapshot else {return}
-        //                for document in snap.documents {
-        //                    let data = document.data()
-        //                    let nameOfGoal = data["nameOfGoal"] as? String ?? "No value"
-        //                    let date = data["date"] as? Date ?? Date()
-        //
-        //                    let reasonForGoal1 = data["reasonForGoal1"] as? String ?? "No value"
-        //                    let reasonForGoal2 = data["reasonForGoal2"] as? String ?? "No value"
-        //                    let reasonForGoal3 = data["reasonForGoal3"] as? String ?? "No value"
-        //                    let imageGoal = data["imageGoal"] as! UIImage
-        //
-        //                    //
-        //                    //                    let goalInput = GoalInput(nameOfGoal: T##String, reasonsForGoal: T##[String], date: T##Data?, imageInput: T##[ImageOfGoal])
-        //
-        //                }
-        //            }
-        //        }
+        self.loadData()
+        self.goalStructure.removeAll()
         
+        DispatchQueue.main.async {
+            self.tableView.reloadData()
+        }
+    }
+    
+    func loadData() {
         let goalCollecgtionRef = db.collection("goals")
         goalCollecgtionRef.getDocuments { (querySapshot, err) in
             if let docs = querySapshot?.documents {
                 for docSnapshot in docs {
                     let nameOfGoalOutPut = docSnapshot["nameOfGoal"] as? String ?? "No value"
-                    print(nameOfGoalOutPut.count)
                     guard docSnapshot["goalImage"] != nil else {print("The is no image"); continue}
                     guard let imageOutData = docSnapshot["goalImage"] as? String else {print(" I'm not a string... My type is \(type(of: docSnapshot["goalImage"]!))"); continue}
                     let date = docSnapshot["date"] as? Date ?? Date()
@@ -68,23 +54,17 @@ class OpeningGoalsPageTableViewController: UITableViewController {
                     let reasonForGoal2 = docSnapshot["reasonForGoal2"] as? String ?? "No value"
                     let reasonForGoal3 = docSnapshot["reasonForGoal3"] as? String ?? "No value"
                     let image = self.converBase64StringToImage(imageBase64String: imageOutData)
-                    print(image)
                     
-                    //                    we need to save the above into GoalOverview
-                    //                    and then append it
-                    let newObject = GoalStructure(nameOfGoal: nameOfGoalOutPut, imageGoal: image, reasonsForGoal: [reasonForGoal1, reasonForGoal2, reasonForGoal3], smallSteps: ["nil"], date: date)
-                    //                        GoalOverView(nameOfGoal: nameOfGoalOutPut, imageGoal: image)
+                    let documentID = docSnapshot.documentID
+                    
+                    let newObject = GoalStructure(nameOfGoal: nameOfGoalOutPut, imageGoal: image, reasonsForGoal: [reasonForGoal1, reasonForGoal2, reasonForGoal3], date: date, documentID: documentID)
                     
                     self.goalStructure.append(newObject)
                 }
-                DispatchQueue.main.async {
-                    self.tableView.reloadData()
-                }
+                self.tableView.reloadData()
             }
         }
-        
     }
-    
     
     func converBase64StringToImage (imageBase64String:String) -> UIImage {
         let imageData = Data.init(base64Encoded: imageBase64String, options: .init(rawValue: 0))
@@ -101,6 +81,9 @@ class OpeningGoalsPageTableViewController: UITableViewController {
         return goalStructure.count
     }
     
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
     
     
     
@@ -114,26 +97,26 @@ class OpeningGoalsPageTableViewController: UITableViewController {
     @IBAction func unwind(_ seg: UIStoryboardSegue) {
         
     }
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+    }
+    
     //    set the segue where it's going
     //    whats getting passed on
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        let vc = DetailOfGoalsViewController()
-//        let goalCollecgtionRef = db.collection("goals")
-//        goalCollecgtionRef.getDocuments { (querySapshot, err) in
-//            if let docs = querySapshot?.documents {
-//                for docSnapshot in docs {
-//
-//                    let reasonForGoal1 = docSnapshot["reasonForGoal1"] as? String ?? "No value"
-//                    let reasonForGoal2 = docSnapshot["reasonForGoal2"] as? String ?? "No value"
-//                    let reasonForGoal3 = docSnapshot["reasonForGoal3"] as? String ?? "No value"
-//
-//                    let reasonForGoal = self.goalStructure.
-//                    
-//                    vc.reasonOfGoalOutPut1 = self.goalStructure.
-//                    vc.reasonOfGoalOutPut2
-//                    vc.reasonOfGoalOutPut3
-//                }
-//            }
+        
+//        if let indexPath = tableView.indexPathForSelectedRow {
+//            let toDetailView = segue.destination as? DetailOfGoalsViewController
+//            let documentId = goalStructure[indexPath.row].documentID
+//            toDetailView.documentID = documentID
 //        }
+        guard let vc = segue.destination as? DetailOfGoalsViewController, let index = tableView.indexPathForSelectedRow?.row else {return}
+//        let documentID = goalStructure[index].documentID
+//        vc.documentID
+        let goal = goalStructure[index]
+        vc.goal = goal
+        let documentID = goal.documentID
+        vc.documentID = documentID
+        
     }
 }

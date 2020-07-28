@@ -11,10 +11,17 @@ import UIKit
 
 struct GoalStructure {
     let nameOfGoal: String?
-    let imageGoal: UIImage
+    let imageGoal: UIImage?
     let reasonsForGoal: [String]
-    let smallSteps: [String]
     let date: Date?
+    var documentID: String
+}
+
+struct SmallGoalStructure {
+    let smallNameOfGoal: String?
+    let smallDate: Date?
+    let goalNotes: String?
+    var document: String
 }
 
 // This is so that i cange change the color of the placeHolder Text

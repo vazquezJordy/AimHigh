@@ -16,6 +16,8 @@
 		60986228248E117F00E2561C /* OpeningGoalsPageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60986227248E117F00E2561C /* OpeningGoalsPageTableViewController.swift */; };
 		6098622B248E124600E2561C /* GoalsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6098622A248E124600E2561C /* GoalsTableViewCell.swift */; };
 		6098622D248F6AF400E2561C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6098622C248F6AF400E2561C /* GoogleService-Info.plist */; };
+		609E878124C9EE670018A147 /* GoalGetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609E878024C9EE670018A147 /* GoalGetter.swift */; };
+		609E878724CA7AA50018A147 /* GoalBreakDownTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609E878624CA7AA50018A147 /* GoalBreakDownTableViewCell.swift */; };
 		609FAB762485568100C2B197 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609FAB752485568100C2B197 /* AppDelegate.swift */; };
 		609FAB782485568100C2B197 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609FAB772485568100C2B197 /* SceneDelegate.swift */; };
 		609FAB7D2485568100C2B197 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 609FAB7B2485568100C2B197 /* Main.storyboard */; };
@@ -32,6 +34,8 @@
 		60986227248E117F00E2561C /* OpeningGoalsPageTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpeningGoalsPageTableViewController.swift; sourceTree = "<group>"; };
 		6098622A248E124600E2561C /* GoalsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsTableViewCell.swift; sourceTree = "<group>"; };
 		6098622C248F6AF400E2561C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		609E878024C9EE670018A147 /* GoalGetter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalGetter.swift; sourceTree = "<group>"; };
+		609E878624CA7AA50018A147 /* GoalBreakDownTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalBreakDownTableViewCell.swift; sourceTree = "<group>"; };
 		609FAB722485568100C2B197 /* AimHigh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AimHigh.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		609FAB752485568100C2B197 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		609FAB772485568100C2B197 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +73,7 @@
 			children = (
 				6049B0EA2493BCD00060E07C /* GoalItems.swift */,
 				606DC00F24B8108800EFD1FB /* Kadens functions.swift */,
+				609E878024C9EE670018A147 /* GoalGetter.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -81,6 +86,7 @@
 				6049B0EC2496CE2C0060E07C /* NewGoalInputViewController.swift */,
 				6049B0EE2496CECA0060E07C /* DetailOfGoalsViewController.swift */,
 				6049B0F02496CF050060E07C /* SmallerGoalsInputViewController.swift */,
+				609E878624CA7AA50018A147 /* GoalBreakDownTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -245,11 +251,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				6049B0EF2496CECA0060E07C /* DetailOfGoalsViewController.swift in Sources */,
+				609E878124C9EE670018A147 /* GoalGetter.swift in Sources */,
 				6098622B248E124600E2561C /* GoalsTableViewCell.swift in Sources */,
 				609FAB762485568100C2B197 /* AppDelegate.swift in Sources */,
 				606DC01024B8108900EFD1FB /* Kadens functions.swift in Sources */,
 				6049B0ED2496CE2C0060E07C /* NewGoalInputViewController.swift in Sources */,
 				60986228248E117F00E2561C /* OpeningGoalsPageTableViewController.swift in Sources */,
+				609E878724CA7AA50018A147 /* GoalBreakDownTableViewCell.swift in Sources */,
 				6049B0F12496CF050060E07C /* SmallerGoalsInputViewController.swift in Sources */,
 				609FAB782485568100C2B197 /* SceneDelegate.swift in Sources */,
 				6049B0EB2493BCD00060E07C /* GoalItems.swift in Sources */,

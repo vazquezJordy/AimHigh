@@ -7,13 +7,25 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseFirestoreSwift
 
 class SmallerGoalsInputViewController: UIViewController {
 
+    @IBOutlet weak var smallGoalNameInput: UITextField!
+    @IBOutlet weak var notesLable: UILabel!
+    @IBOutlet weak var notesTextView: UITextView!
+    @IBOutlet weak var askingDateLable: UILabel!
+    @IBOutlet weak var smallGoalDatePicker: UIDatePicker!
+    
+    var db: Firestore! = Firestore.firestore()
+    var ref: DatabaseReference?
+    var documentID: String!
+   
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        db = Firestore.firestore()
     }
     
 
@@ -26,5 +38,23 @@ class SmallerGoalsInputViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    
+    
+    @IBAction func doneButtonClicked(_ unwindSegue: UIStoryboardSegue) {
+        goalDateFormatter.dateStyle = .full
+        var ref: DocumentReference? = nil
+        
+        let stringDate = goalDateFormatter.string(from: smallGoalDatePicker.date)
+        
+//        let collectionRef = db.collection("goals")
+        
+        db.collection("goals").document(documentID).collection("breakDownOfGoal").addDocument(data: [
+            "smallNameOfGoal": smallGoalNameInput.text as? String,
+            "goalNotes": notesTextView.text as? String,
+            "smallDate": stringDate
+        ])
+        
+        performSegue(withIdentifier: "unwindBackToDetailView", sender: self)
+        
+    }
 }
