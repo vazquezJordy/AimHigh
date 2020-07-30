@@ -24,6 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         goalDateFormatter.dateStyle = .full
         
         FirebaseApp.configure()
+        
         let db = Firestore.firestore()
 //        the print is just to silence
         print(db)
