@@ -147,16 +147,8 @@ class OpeningGoalsPageTableViewController: UITableViewController {
         
     }
     
-    //    set the segue where it's going
-    //    whats getting passed on
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
-        //        editCurrentGoal
-        //        toNewGoal
-        
-        
-        
-        
+
         
         if segue.identifier == "toNewGoal", let vc = segue.destination as? NewGoalInputViewController {
             

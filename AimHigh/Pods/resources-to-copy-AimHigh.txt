@@ -1,0 +1,1 @@
+/Users/jordyvazquez/Library/Developer/Xcode/DerivedData/AimHigh-harzqqzrcwmnvrcuibjsxrscwtjd/Build/Products/Debug-iphonesimulator/FirebaseUI/FirebaseAuthUI.bundle
